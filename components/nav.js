@@ -9,12 +9,12 @@ function classNames(...classes) {
 export default function Nav({ current }) {
   let navigation = [
     { name: 'Introduction', href: '/', current: current == '/' },
-    { name: 'Water Scarcity', href: '/waterscarcity', current: current == '/waterscarcity' },
-    { name: 'Soil Degradation', href: '/soildegradation', current: current == '/soildegradation' },
-    { name: 'Climate Change', href: '/climatechange', current: current == '/climatechange' },
-    { name: 'Farmer Distress', href: '/farmerdistress', current: current == '/farmerdistress' },
-    { name: 'Solutions', href: '/solutions', current: current == '/solutions' },
-    { name: 'Conclusion', href: '/conclusion', current: current == '/conclusion' }
+    { name: 'History and Context', href: '/history', current: current == '/history' },
+    { name: 'Identity and Resistance', href: '/identity', current: current == '/identity' },
+    { name: 'Politics and Interest Groups', href: '/politics', current: current == '/politics' },
+    { name: 'Economic Factors', href: '/economicfactors', current: current == '/economicfactors' },
+    { name: 'Conclusion', href: '/conclusion', current: current == '/conclusion' },
+    { name: 'Sources', href: '/sources', current: current == '/sources'}
   ]
 
   return (

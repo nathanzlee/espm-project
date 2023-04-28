@@ -4,12 +4,12 @@ import Router from 'next/router'
 export default function Footer({ current }) {
     const navigation = [
         { index: 0, href: '/' },
-        { index: 1, href: '/waterscarcity' },
-        { index: 2, href: '/soildegradation' },
-        { index: 3, href: '/climatechange' },
-        { index: 4, href: '/farmerdistress' },
-        { index: 5, href: '/solutions' },
-        { index: 6, href: '/conclusion' }
+        { index: 1, href: '/history' },
+        { index: 2, href: '/identity' },
+        { index: 3, href: '/politics' },
+        { index: 4, href: '/economicfactors' },
+        { index: 5, href: '/conclusion' },
+        { index: 6, href: '/sources' }
     ]
 
     const currentIndex = navigation.find(n => n.href == current).index
@@ -24,7 +24,7 @@ export default function Footer({ current }) {
     }
 
     return (
-        <div className="absolute bottom-0 w-full h-[70px] bg-white flex items-center justify-between px-5">
+        <div className="sticky bottom-0 w-full h-[70px] bg-white flex items-center justify-between px-5">
             <button 
                 className="inline-flex items-center gap-x-2 rounded-md bg-white py-2 px-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                 onClick={previous}
