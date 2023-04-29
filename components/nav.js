@@ -8,12 +8,9 @@ function classNames(...classes) {
 
 export default function Nav({ current }) {
   let navigation = [
-    { name: 'Introduction', href: '/', current: current == '/' },
-    { name: 'History and Context', href: '/history', current: current == '/history' },
-    { name: 'Identity and Resistance', href: '/identity', current: current == '/identity' },
-    { name: 'Politics and Interest Groups', href: '/politics', current: current == '/politics' },
-    { name: 'Economic Factors', href: '/economicfactors', current: current == '/economicfactors' },
-    { name: 'Conclusion', href: '/conclusion', current: current == '/conclusion' },
+    { name: 'Information', href: '/', current: current !== '/timeline' && current !== '/resources' && current !== '/sources' },
+    { name: 'Timeline', href: '/timeline', current: current == '/timeline' },
+    { name: 'Online Resources', href: '/resources', current: current == '/resources'},
     { name: 'Sources', href: '/sources', current: current == '/sources'}
   ]
 

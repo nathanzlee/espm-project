@@ -39,7 +39,6 @@ export default function Home() {
         </ul>
         
       </div>
-      <Footer current={'/sources'} />
     </div>
   )
 }
